@@ -1,0 +1,302 @@
+
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Angeline_Vintage";
+  src: url(../fonts/Angeline_Vintage.ttf); }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url(../fonts/Roboto-Italic.ttf); }
+
+body {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  background: black;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold"; }
+
+.container-fluid {
+  padding: 0; 
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+
+.navareo{
+  background:black;
+  opacity: 80%;
+}
+.carousel-inner{
+  background: black;
+}
+
+p{
+  text-align: center;
+}
+
+.portada{
+  margin: auto;
+}
+
+.d-block:hover{
+  -webkit-transition:all 0.95s ease;
+  -moz-transition:all 0.95s ease;
+  -o-transition:all 0.95s ease;
+  -ms-transition:all 0.95s ease;
+  width:100%;
+  opacity: .5;
+}
+
+
+
+.card:hover{
+  -webkit-transform:scale(1.08);
+  -moz-transform:scale(1.08);
+  -ms-transform:scale(1.08);
+  -o-transform:scale(1.08);
+  transform:scale(1.08);
+  }
+  .card:hover{
+    -webkit-transition:all 0.95s ease;
+    -moz-transition:all 0.95s ease;
+    -o-transition:all 0.95s ease;
+    -ms-transition:all 0.95s ease;
+    width:100%;
+    opacity: .5;
+
+    }
+
+
+
+.btn{
+  background: #aa4067;
+  color: white;
+  border: none;
+}
+.btn:hover{
+  background:#c27d96;
+}
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.lead{
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 16px;
+}
+.titulo{
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+.jumbotron{
+  background: black;
+  color: white;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+header .card a, .vr-gallery a.btn {
+  background-color: #03133a;
+  width: 200px;
+  padding: 12px 0;
+  color: #ffffff;
+  font-family: "Montserrat-Bold";
+  margin-top: 20px;
+  border-radius: 0; }
+  header .card a:hover, .vr-gallery a.btn:hover {
+    background: #ffffff;
+    color: #03133a; }
+
+
+
+header {
+  background: black;
+  text-align: center;
+  padding: 20px 0;
+  padding-bottom: 50px; }
+  header .bg-cover {
+    background: rgba(0, 0, 0, 0.7); }
+  header .input-group input {
+    display: none; }
+  header h2.logo {
+    font-size: 75px;
+    font-family: "Angeline_Vintage";
+    color: #ffffff; }
+  header .nav-fill {
+    max-width: 250px; }
+    header .nav-fill a {
+      color: #ffffff; }
+    header .nav-fill li:hover a {
+      color: #03133a; }
+  header .navbar li.nav-item a.nav-link {
+    font-family: "Montserrat-Bold";
+    color: #ffffff;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem; }
+  header .card {
+    color: #ffffff; }
+    header .card p {
+      text-transform: uppercase; }
+    header .card hr {
+      margin-top: 5px;
+      width: 30px;
+      border: 1px solid #03133a; }
+    header .card h2 {
+      font-size: 40px;
+      max-width: 510px;
+      margin: 20px auto; }
+    @media (max-width: 1299px) {
+      header .card h2 {
+        font-size: 24px; }
+      header .card a {
+        width: auto;
+        padding: 8px 15px;
+        font-size: 12px; } }
+    @media (max-width: 767px) {
+      header .card h2 {
+        font-size: 36px; }
+      header .card a {
+        width: auto;
+        padding: 12px 15px;
+        font-size: 16px; } }
+    @media (max-width: 500px) {
+      header .card h2 {
+        font-size: 24px; }
+      header .card a {
+        width: auto;
+        padding: 8px 15px;
+        font-size: 14px; } }
+  header .col-md-3 {
+    text-align: center;
+    padding: 5px 2.5px !important; }
+    header .col-md-3.first {
+      padding-left: 15px !important; }
+    header .col-md-3.last {
+      padding-right: 15px !important; }
+    header .col-md-3 img {
+      max-height: 227px; }
+    header .col-md-3 h5 {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  header .bar1, header .bar2, header .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+    display: block;
+    position: relative; }
+  header .change .bar1 {
+    -webkit-transform: rotate(-42deg) translate(-2px, 6px);
+    transform: rotate(-42deg) translate(-2px, 6px); }
+  header .change .bar2 {
+    opacity: 0; }
+  header .change .bar3 {
+    -webkit-transform: rotate(46deg) translate(-4px, -8px);
+    transform: rotate(46deg) translate(-4px, -8px); }
+    
+
+
+
+.nav-search {
+  display: none;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  height: auto; }
+
+.page-header{
+    color: white;
+    margin: 5%;
+}
+
+.carousel-item{
+  background: black;
+}
+
+
+footer {
+  background: black; }
+  footer h2.logo {
+    font-size: 75px;
+    font-family: "Angeline_Vintage";
+    color: #ffffff; }
+  footer .nav-fill {
+    max-width: 250px; }
+    footer .nav-fill a {
+      color: #ffffff; }
+    footer .nav-fill li:hover a {
+      color: #03133a; }
+  footer .copyright {
+    padding: 34px 0;
+    background-color: rgba(0, 0, 0, 0.451); }
+    footer .copyright p {
+      color: #999999; }
+
+
+
+@media (max-width: 767px) {
+  .mt-md-4 {
+    margin-top: 50px; } }
+@media (max-width: 991px) {
+  .ar-content .col-lg-9 {
+    padding-right: 15px !important; }
+  .ar-content .col-lg-3 {
+    padding-left: 15px !important; } }
+
+/*# sourceMappingURL=style.css.map */
+
+
