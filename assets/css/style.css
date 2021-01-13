@@ -34,6 +34,60 @@ body {
   font-size: 16px;
   background: black;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.slider{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  
+}
+.slider ul{
+  padding: 0;
+  display: flex;
+  width: 400%;
+
+  animation: slider 20s infinite alternate;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider li img{
+  width: 100%;
+}
+.slider:hover{
+  opacity: 60%;
+  transition: all 1s;
+}
+
+@keyframes slider{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+nav.navbar{
+  background: #F9AB1D;
+  opacity: 90%;
+}
+.navbar a{
+  color: black;
+}
+
+
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,10 +103,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navareo{
-  background:black;
-  opacity: 80%;
-}
 .carousel-inner{
   background: black;
 }
@@ -74,26 +124,19 @@ p{
   opacity: .5;
 }
 
+div.card-deck:hover div#info {
+  opacity:1;
+}
 
 
 .card:hover{
-  -webkit-transform:scale(1.08);
-  -moz-transform:scale(1.08);
-  -ms-transform:scale(1.08);
-  -o-transform:scale(1.08);
-  transform:scale(1.08);
+  opacity: 0.20;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
   }
-  .card:hover{
-    -webkit-transition:all 0.95s ease;
-    -moz-transition:all 0.95s ease;
-    -o-transition:all 0.95s ease;
-    -ms-transition:all 0.95s ease;
-    width:100%;
-    opacity: .5;
-
-    }
-
-
 
 .btn{
   background: #aa4067;
@@ -122,11 +165,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-.lead{
-  margin-right: 10%;
-  margin-left: 10%;
-  font-size: 16px;
-}
+
 .titulo{
   margin-right: 10%;
   margin-left: 10%;
@@ -138,10 +177,9 @@ textarea {
   margin-bottom: 0px;
 }
 
-
-
-
-
+.texto24{
+  font-size: 45px;
+}
 
 
 
@@ -157,7 +195,7 @@ header .card a, .vr-gallery a.btn {
     background: #ffffff;
     color: #03133a; }
 
-
+   
 
 header {
   background: black;
@@ -195,20 +233,53 @@ header {
       font-size: 40px;
       max-width: 510px;
       margin: 20px auto; }
-    @media (max-width: 1299px) {
-      header .card h2 {
+    @media (max-width: 1299px){
+      
+     header .card h2 {
         font-size: 24px; }
       header .card a {
         width: auto;
         padding: 8px 15px;
-        font-size: 12px; } }
+        font-size: 12px; }
+        .lead{
+          margin-right: 10%;
+          margin-left: 10%;
+          font-size: 16px;
+        }
+        .texto24{
+          font-size: 45px;
+        } 
+        h1#headline {
+          position: absolute;
+          font-size: 2.5rem;
+          margin-left: 20px;
+          margin-top: 80px;
+          transition: margin-left 0.3s;
+          color: white;
+          overflow: hidden;
+        }
+        
+        
+        div.card-deck:hover h1#headline {
+          margin-left: 20px;
+        }
+        }
     @media (max-width: 767px) {
       header .card h2 {
         font-size: 36px; }
       header .card a {
         width: auto;
         padding: 12px 15px;
-        font-size: 16px; } }
+        font-size: 16px; }
+        .lead{
+          margin-right: 10%;
+          margin-left: 10%;
+          font-size: 14px;
+        } 
+        .texto24{
+          font-size: 30px;
+        }
+        }
     @media (max-width: 500px) {
       header .card h2 {
         font-size: 24px; }
@@ -246,10 +317,16 @@ header {
   header .change .bar3 {
     -webkit-transform: rotate(46deg) translate(-4px, -8px);
     transform: rotate(46deg) translate(-4px, -8px); }
-    
 
+.navbar{
+  background: black;
+  opacity: 95%;
+  margin-bottom: 5%;
+}
 
-
+.email{
+  color: white;
+}
 .nav-search {
   display: none;
   max-width: 600px;
@@ -285,12 +362,20 @@ footer {
     background-color: rgba(0, 0, 0, 0.451); }
     footer .copyright p {
       color: #999999; }
+     
+      
 
 
 
 @media (max-width: 767px) {
   .mt-md-4 {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+    .lead{
+      margin-right: 10%;
+      margin-left: 10%;
+      font-size: 16px;
+    }
+    }
 @media (max-width: 991px) {
   .ar-content .col-lg-9 {
     padding-right: 15px !important; }
