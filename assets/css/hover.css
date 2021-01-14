@@ -3,12 +3,197 @@
     padding: 0;
 }
 
-@media (max-width: 1299px) {
+.carousel-inner{
+opacity: 80%;
+}
 
-    @media (max-width: 767px) {
 
-        @media (max-width: 500px) {}
+.carousel-inner:hover {
+    opacity: 100;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
 
-        @media (max-width: 767px) {}
+.carousel-inner2:hover {
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
 
-        @media (max-width: 991px) {}
+
+.logo-footer img {
+    display: block;
+    margin: auto;
+}
+
+.navbar img {
+    display: inline-block;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+nav.navbar {
+    background: white;
+    opacity: 90%;
+}
+
+.navbar a {
+    color: black;
+}
+
+
+.slider {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.centrado {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.centrado2 {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+#section2 {
+    margin-bottom: 1%;
+
+}
+
+.redes {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.div-imagen {
+    display: inline-block;
+    position: relative;
+}
+
+
+.div-imagen>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+
+.desvanecer:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+
+
+
+
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item2 {
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    .carousel-item h1 {
+        position: absolute;
+        top: 100px;
+        right: 70px;
+        color: white;
+        font-size: 70px;
+    }
+
+    .carousel-item2 h1 {
+        position: absolute;
+        top: 100px;
+        left: 70px;
+        color: white;
+        font-size: 70px;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .carousel-item h1 {
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        color: white;
+        font-size: 50px;
+    }
+    .carousel-item2 h1 {
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: white;
+        font-size: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-item h1 {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        color: white;
+        font-size: 25px;
+    }
+    .carousel-item2 h1 {
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        color: white;
+        font-size: 25px;
+    }
+
+
+}
